@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="youtube-Styles.css">
-    <title>Youtube Video Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="youtube-Styles.css">
+  <title>vidtube Video Page</title>
 </head>
+
 <body>
 
   <nav class="flex-div">
     <!-- nav left -->
     <div class="nav-left flex-div">
-      <img src="images/menu.png" class = "menu-icon">
+      <img src="images/menu.png" class="menu-icon">
       <img src="images/logo.png" class="logo">
     </div>
 
     <!-- nav middle -->
     <div class="nav-middle flex-div">
-       <div class="search-box flex-div">
-          <input type="text" placeholder="Search">
-          <img src="images/search.png">
-       </div>
-       <img src="images/voice-search.png" class = "mic-icon">
+      <div class="search-box flex-div">
+        <input type="text" placeholder="Search">
+        <img src="images/search.png">
+      </div>
+      <img src="images/voice-search.png" class="mic-icon">
     </div>
 
     <!-- nav right -->
@@ -30,14 +32,168 @@
       <img src="images/upload.png">
       <img src="images/more.png">
       <img src="images/notification.png">
-      <img src="images/Jack.png" class = "user-icon">
+      <img src="images/Jack.png" class="user-icon">
     </div>
   </nav>
 
-  <div class="container">
-    
+  <div class="container play-container">
+    <div class="row">
+      <div class="play-video">
+        <video controls>
+          <source src="images/video.mp4" type="video/mp4">
+        </video>
+        <div class="tags">
+          <a href="">#Nature</a>
+          <a href="">#Traveling</a>
+          <a href="">#Leisure</a>
+          <a href="">#Sea</a>
+        </div>
+        <h3>Best Place To Relex Yourself</h3>
+        <div class="play-video-info">
+          <p>1225 views &bull; 2 days ago</p>
+          <div>
+            <a href=""><img src="images/like.png" alt="">125</a>
+            <a href=""><img src="images/dislike.png" alt="">2</a>
+            <a href=""><img src="images/share.png" alt="">Share</a>
+            <a href=""><img src="images/save.png" alt="">Save</a>
+          </div>
+        </div>
+        <hr>
+
+        <div class = "publisher">
+          <img src="images/Jack.png">
+          <div>
+            <p>Traveling Feather</p>
+            <span>500k Subscribers</span>
+          </div>
+          <button type="button">Subscribe</button>
+        </div>
+        
+        <div class="vid-description">
+          <p>Channel about traveling and leisure</p>
+          <p>Subscribe for more content</p>
+          <hr>
+          <h4>134 Comments</h4>
+
+          <div class="add-comment">
+            <img src="images/Jack.png" alt="">
+            <input type="text" placeholder = "Write comments...">
+          </div>
+
+          <div class="old-comment">
+            <img src="images/Jack.png" alt="">
+             <div>
+               <h3>Jack Nicholson <span>2 days ago</span></h3>
+               <p>That makes my day. Absolutely love it. </p>
+               <div class="comment-action">
+                <img src="images/like.png" alt="">
+                <span>244</span>
+                <img src="images/dislike.png" alt="">
+                <span>2</span>
+                <span>REPLY</span>
+                <a href="">All Replies</a>
+               </div>
+             </div>
+          </div>
+
+          <div class="old-comment">
+            <img src="images/Jack.png" alt="">
+             <div>
+               <h3>Jack Nicholson <span>2 days ago</span></h3>
+               <p>That makes my day. Absolutely love it. </p>
+               <div class="comment-action">
+                <img src="images/like.png" alt="">
+                <span>244</span>
+                <img src="images/dislike.png" alt="">
+                <span>2</span>
+                <span>REPLY</span>
+                <a href="">All Replies</a>
+               </div>
+             </div>
+          </div>
+
+        </div>
+
+      </div>
+      
+      <div class="right-sidebar">
+        <div class="side-video-list">
+          <a href="" class="small-thumbnail"><img src="images/thumbnail1.png"></a>
+          <div class="vid-info">
+            <a href="">Make a picnic on a boat above the water</a>
+            <p>Travel Worm</p>
+            <p>15k Views</p>
+          </div>
+        </div>
+
+        <div class="side-video-list">
+          <a href="" class="small-thumbnail"><img src="images/thumbnail2.png"></a>
+          <div class="vid-info">
+            <a href="">Make a picnic on a boat above the water</a>
+            <p>Travel Worm</p>
+            <p>15k Views</p>
+          </div>
+        </div>
+
+        <div class="side-video-list">
+          <a href="" class="small-thumbnail"><img src="images/thumbnail3.png"></a>
+          <div class="vid-info">
+            <a href="">Make a picnic on a boat above the water</a>
+            <p>Travel Worm</p>
+            <p>15k Views</p>
+          </div>
+        </div>
+
+        <div class="side-video-list">
+          <a href="" class="small-thumbnail"><img src="images/thumbnail4.png"></a>
+          <div class="vid-info">
+            <a href="">Make a picnic on a boat above the water</a>
+            <p>Travel Worm</p>
+            <p>15k Views</p>
+          </div>
+        </div>
+
+        <div class="side-video-list">
+          <a href="" class="small-thumbnail"><img src="images/thumbnail5.png"></a>
+          <div class="vid-info">
+            <a href="">Make a picnic on a boat above the water</a>
+            <p>Travel Worm</p>
+            <p>15k Views</p>
+          </div>
+        </div>
+
+        <div class="side-video-list">
+          <a href="" class="small-thumbnail"><img src="images/thumbnail6.png"></a>
+          <div class="vid-info">
+            <a href="">Make a picnic on a boat above the water</a>
+            <p>Travel Worm</p>
+            <p>15k Views</p>
+          </div>
+        </div>
+
+        <div class="side-video-list">
+          <a href="" class="small-thumbnail"><img src="images/thumbnail7.png"></a>
+          <div class="vid-info">
+            <a href="">Make a picnic on a boat above the water</a>
+            <p>Travel Worm</p>
+            <p>15k Views</p>
+          </div>
+        </div>
+
+        <div class="side-video-list">
+          <a href="" class="small-thumbnail"><img src="images/thumbnail8.png"></a>
+          <div class="vid-info">
+            <a href="">Make a picnic on a boat above the water</a>
+            <p>Travel Worm</p>
+            <p>15k Views</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
- <script src="youtube-Script.js"></script>
+  <script src="youtube-Script.js"></script>
 </body>
+
 </html>

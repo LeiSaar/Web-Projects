@@ -1,0 +1,228 @@
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* menu design */
+#menu{
+    background: whitesmoke;
+}
+
+.brand-log{
+    padding: 0 30px;
+}
+
+.brand-log img{
+    width: 150px;
+    height: 150px;
+    margin-top: -20px;
+}
+
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    /* text-align: center; */
+    font-size: 20px;
+    padding: 8px 30px;
+    color: rgb(128, 129, 129);
+    font-weight: 300;
+}
+
+.menu-item a:hover{
+    cursor: pointer;
+    background: rgb(250, 212, 218);
+}
+
+#food-container{
+    background: whitesmoke;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0px;
+    background: whitesmoke;
+    z-index:1;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#header .address{
+    font-size: 20px;
+}
+
+.your-address{
+   border: 1px solid indianred;
+   color: indianred;
+   padding: 5px 10px;
+   border-radius: 5px;
+   width: 150px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   cursor: pointer;
+}
+
+.add-box i{
+    font-size:20px;
+}
+
+.util i, .user i{
+    font-size: 18px;
+    margin: 0 16px;
+    border: 1px solid crimson;
+    padding: 8px 16px;
+    color: crimson;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.util i:active{
+    color: white;
+    background: crimson;
+}
+
+.food-items{
+
+}
+
+#biryani, #chicken, #paneer, #vegetable, #chinese, #south-indian{
+    margin-top: 40px;
+}
+
+#paneer #item-card, #vegetable #item-card{
+    background: rgb(218, 253, 18);
+}
+
+#chinese #item-card, #south-indian #item-card{
+    background: rgb(221, 243, 243);
+}
+
+#category-name, .menu-item{
+    margin: 10px;
+    font-size: 35px;
+    color: coral;
+}
+
+#item-card{
+ width: 180px;
+ height: 220px;
+ padding: 10px;
+ margin: 10px;
+ display: inline-block;
+ border-radius: 5px;
+ background: rgb(253, 221, 226);
+ cursor: pointer;
+ transition: 0.5s all ease-in-out;
+}
+
+#rating{
+    padding: 7px;
+    color: gold;
+    background: black;
+    font-size: 14px;
+    border-radius: 14px;
+}
+
+.fa-heart-o {
+    padding: 6px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.toggle-hear{
+    background: orangered;
+    color: white;
+}
+
+#item-card img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+  transition: 0.5s all ease-in-out;
+}
+
+#item-card:hover img{
+    transform: scale(1.2); 
+}
+
+#card-top{
+  display: flex;
+  margin: 5px 0;
+  justify-content: space-between;
+}
+
+#item-name{
+    margin: 5px 0;
+    font-weight: 600;
+    color: darkslategray;
+    font-size: 18px;
+}
+
+#item-price{
+    margin: 0;
+    color:rgb(2, 27, 27);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#cart{
+    background: whitesmoke;
+    padding-right: 30px;
+    overflow-y: scroll;
+}
+
+.taste-header{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: whitesmoke; 
+}
+
+.item-menu{
+    margin: 0;
+    font-size: 30px;
+    margin-top: 40px;
+    color: indianred;
+    background: whitesmoke;
+}
+
+.border{
+    width: 80px;
+    height: 4px;
+    margin: 3px 0;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    background: coral;
+}
