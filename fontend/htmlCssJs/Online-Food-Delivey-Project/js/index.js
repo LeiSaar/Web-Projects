@@ -95,6 +95,7 @@ function cetegoryLists() {
 
         const cloneListCard = listCard.cloneNode(true);
         categoryList.appendChild(cloneListCard);
+        document.querySelector('.category-header').appendChild(cloneListCard);
     })
 }
 
