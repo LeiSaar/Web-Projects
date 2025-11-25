@@ -53,6 +53,8 @@
 
 .navbar-search-icon{
     position: relative;
+    /* display: flex;
+    align-items: center; */
 }
 
 .navbar-search-icon .dot{
@@ -64,4 +66,6 @@
   top: -8px;
   right: -8px;
 }
+
+
 
