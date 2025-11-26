@@ -5,7 +5,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Outfit;
-  /* border: 1px solid red; */
+  scroll-behavior: smooth;
+  /* border: 1px solid red;  */
 }
 
 body{
@@ -31,3 +32,8 @@ a{
   }
 }
 
+@media (max-width: 750px){
+    .app{
+      width: 95%;
+    }
+}
