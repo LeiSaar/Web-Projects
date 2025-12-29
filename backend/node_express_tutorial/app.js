@@ -1,10 +1,13 @@
-const amount = 13;
+const http = require('http');
+const fs = require('fs');
 
-if(amount < 10){
-    console.log('small number');
-}
-else{
-    console.log('large number');
-}
-
-console.log(`hey it's my first node app!!!`);
+http.createServer(function (req, res){
+    // const text = fs.readFileSync('./content/big.txt', 'utf8');
+    const fileStream =fs.createReadStream('./content/big.txt', 'utf8');
+    fileStream.on('open', ()=>{
+        fileStream.pipe(res);
+    });
+    fileStream.on('error', (err)=>{
+        res.end(err);
+    });
+}).listen(5000);

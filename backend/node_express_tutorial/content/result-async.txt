@@ -1,0 +1,1 @@
+Here is the copy of the second text by using writeFile: Hello, this is the second file!

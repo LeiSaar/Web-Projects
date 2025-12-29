@@ -1,0 +1,1 @@
+Here is the test result of combining the first and the second texts together: Hello, this is the first text file!, Hello, this is the second file!
