@@ -94,7 +94,7 @@ function App() {
         setTimeout(() => {
           setMatchedCards((prev) => [...prev, firstCard.id, card.id]);
           setScore((prev) => prev + 1);
-          setCards((prev) => {
+          setCards((prev) => 
             prev.map((c) => {
               if (c.id === card.id || c.id === firstCard.id) {
                 return { ...c, isMatched: true };
@@ -102,7 +102,7 @@ function App() {
                 return c;
               }
             })
-          });
+          );
           setFlippedCards([]);
           setIsLocked(false);
         }, 500);
@@ -135,9 +135,9 @@ function App() {
       {isGameComplete && <WinMessage moves={moves} />}
       <div className="card-grids">
         {
-          cards.map((card) => {
-            <Card card={card} onClick={handleCardClick} />
-          })
+          cards.map((card) => (
+            <Card key = {card.id} card={card} onClick={handleCardClick} />
+          ))
         }
       </div>
     </div>)
