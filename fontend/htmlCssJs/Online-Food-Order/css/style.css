@@ -238,6 +238,11 @@ h4{
 }
 
 /* section 2 */
+
+.card-list{
+    flex-wrap: wrap;
+}
+
 .order-card{
     flex: 1;
     flex-basis: 300px;
@@ -272,6 +277,7 @@ h4{
     align-items: center;
     z-index: 99;
     box-shadow: rgba(0, 0, 0 , 0.1 ) -10px -10px 20px;
+    transition: .3s ease-in-out;
 }
 
 .cart-tab-active{
@@ -280,6 +286,7 @@ h4{
 
 .cart-list{
     flex: 1;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 1.5rem;
     overflow: auto;
@@ -313,8 +320,14 @@ h4{
 .item{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content:space-between;
+    gap: 1.5rem;
     padding: 0.7rem 1rem;
+    transition:all 0.5s ease-in-out;
+}
+
+.item.slide-out{
+    transform:translateX(50%);
 }
 
 .cart-list .item:nth-child(even){
@@ -527,6 +540,7 @@ input[type = "email"]:focus{
 
     .mobile-menu-active {
         left: 50%;
+        top: 14vh;
         transform: translatex(-50%);
     }
 
