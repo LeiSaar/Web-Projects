@@ -5,6 +5,7 @@ import TrustedBy from './components/TrustedBy.jsx';
 import Services from './components/Services.jsx';
 import OurWork from './components/OurWork.jsx';
 import Teams from './components/Teams.jsx';
+import ContactUs from './components/ContactUs.jsx';
 
 const App = () => {
   const [theme, setTheme] = useState(()=>{
@@ -20,6 +21,7 @@ const App = () => {
       <Services/>
       <OurWork/>
       <Teams/>
+      <ContactUs/>
     </div>
   )
 }
