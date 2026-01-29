@@ -1,0 +1,11 @@
+h1{
+    text-shadow:3px 3px 5px blue,
+    -3px -6px 4px yellow;
+}
+
+#box1{
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: rgb(234, 234, 234);
+    box-shadow: 3px 3px 5px;
+}
