@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border:1px solid red;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+}
+
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.showcase .menu {
+    flex: 0.8;
+    margin-inline: 10px;
+}
+
+.showcase .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.showcase .menu ul li a {
+    color: #fff;
+}
+
+.showcase header .toggle {
+    position: relattive;
+    text-align: center;
+    width: 40px
+}
+
+.toggle i,
+.fa-bars .fa-xmark {
+    font-size: 30px;
+}
+
+.toggle {
+    display: none;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    mix-blend-mode: overlay;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin: 1em 0;
+    max-width: 700px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    color: #111;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+    color: blue;
+    transform: translateY(-10px);
+}
+
+.social {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 20px;
+}
+
+.social li a {
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+
+.social li a:hover {
+    transform: translateY(-15px);
+}
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: auto;
+    height: auto;
+    background: rgb(109, 18, 170);
+    padding: 10px;
+    display: none;
+    z-index: 9999;
+}
+
+.toggle-menu a {
+    color: white;
+}
+
+.toggle-xmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 3px;
+}
+
+.toggle-menu {
+    padding: 4px 10px;
+    padding-right: 20px;
+    margin-top: 10px;
+
+}
+
+
+@media (max-width: 991px) {
+
+    .showcase,
+    .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .side-bar.active {
+        display: block;
+    }
+
+    .toggle.hidden {
+        display: none;
+    }
+
+
+}
