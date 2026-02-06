@@ -24,6 +24,6 @@ When the screen is very big, we can hide the mobile navigation elements. With th
 3. **Opening Logic:** When we click the menu icon/section, we add the sidebar `.active` class to show the sidebar. Also, the `.hidden` class is added to the menu section.
 4. **Closing Logic:** When we click the close button inside the sidebar, we remove the `.active` class from the sidebar. Meanwhile, the `.hidden` class is removed from the menu section.
 
-> **Note:** In the JavaScript part, we can also simply use the `toggle` function for the menu and sidebar sections to get the toggling effect more easily.
+> **Note:** In the JavaScript part, we can also simply use the `toggle` function for the menu and sidebar sections to get the toggling effect more easily. <br>
 > **Mistake** I made: tried to control the display style with the media to achieve the toggling effect the sidebar and the menu icon in the javascrip, which was failed, when the screen is becoming larger the menu icon didn't not disappear. The reason behind it is that when we apply inline styles directly to the HTML elements, the inline styles are "stronger" than css media queries. So, if we toggle the sidebar on a small screen and then expand the window, the inline style display: inline-block remains stuck on the element, overriding the css.  
 ---
