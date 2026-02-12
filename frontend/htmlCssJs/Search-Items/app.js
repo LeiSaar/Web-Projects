@@ -125,25 +125,23 @@ const search = () => {
             }
         }
     }
-}
+};
 
+
+// my own searching function
 
 const searchProducts = () => {
 
     const searchQuery = document.getElementById("search-item").value.toUpperCase();
-    let matchedProducts = [];
-    productItems.forEach((item) => {
-        if (item.name.toLocaleUpperCase().includes(searchQuery)){
-            matchedProducts.push(item);
-        }
-    })
+
+    const matchedProducts = productItems.filter((item) => item.name.toUpperCase().includes(searchQuery));
 
     if(matchedProducts.length > 0){
         displayProducts(matchedProducts);
     } else{
         productlist.innerHTML = "<div class = 'no-match'> No Matched Item Found! Please try other queries:) </div>";
     }
-}
+};
 
 window.addEventListener("DOMContentLoaded", () => {
     displayProducts(productItems);

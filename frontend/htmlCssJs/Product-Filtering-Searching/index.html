@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="search-container" id = "search-container">
+            <input 
+               type="search"
+               id="search-input"
+               placeholder="Search product name here..."
+            />
+            <button id="search">
+                Search
+            </button>
+        </div>
+
+        <div id="buttons">
+            <button class="button-value" onclick = "filterProduct('All')">All</button>
+            <button class="button-value" onclick = "filterProduct('Topwear')">Topwear</button>
+            <button class="button-value" onclick = "filterProduct('Bottomwear')">Bottomwear</button>
+            <button class="button-value" onclick = "filterProduct('Jacket')">Jacket</button>
+            <button class="button-value" onclick = "filterProduct('Shoe')">Shoe</button>
+            <button class="button-value" onclick = "filterProduct('Watch')">Watch</button>
+            <button class="button-value" onclick = "filterProduct('Other')">Other</button>
+        </div>
+       
+        <div id="products">
+            <!-- <div class="card">
+                <div class="image-container">
+                    <img src="images/b1.jpg">
+                </div>
+                <div class= "product-details">
+                    <h2 class = "product-name">productName</>
+                    <p class = "productPrice"> $ {product.price}</p>
+                </div> 
+            </div> -->
+        </div>
+
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>
