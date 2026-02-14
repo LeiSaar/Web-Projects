@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting and Filtering Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <ul class="indicator">
+                <li data-filter="all" class="active">
+                    <a href="#">All</a>
+                </li>
+                <li data-filter="Blazer">
+                    <a href="#">Blazers</a>
+                </li>
+                <li data-filter="Watch">
+                    <a href="#">Watches</a>
+                </li>
+                <li data-filter="Shoes">
+                    <a href="#">Shoes</a>
+                </li>
+                <li data-filter="Mobile">
+                    <a href="#">Mobiles</a>
+                </li>
+                <li data-filter="Accessories">
+                    <a href="#">Accessories</a>
+                </li>
+            </ul>
+
+            <div class="filter-condition">
+                <span>View As a </span>
+                <select name="" id="select">
+                    <option value="Default">Default</option>
+                    <option value="LowToHigh">Low to High</option>
+                    <option value="HighToLow">High to Low</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="product-field">
+            <ul class="items">
+                <li data-category="" data-price="">
+                    <picture>
+                        <img src="images/wa1.png" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p class="icon">
+                            <span><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-share-square"></i></span>
+                            <span><i class="fas fa-shopping-basket"></i></span>
+                        </p>
+                        <strong>Watch</strong>
+                        <span>Classic leather strap with minimalist dial.</span>
+                        <small>Buy now</small>
+                    </div>
+                    <h4>$45.78</h4>
+                </li>
+
+                <li data-category="" data-price="">
+                    <picture>
+                        <img src="images/bz1.png" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p class="icon">
+                            <span><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-share-square"></i></span>
+                            <span><i class="fas fa-shopping-basket"></i></span>
+                        </p>
+                        <strong>Blazer</strong>
+                        <span>Slim-fit navy wool blend for formal events.</span>
+                        <small>Buy now</small>
+                    </div>
+                    <h4>$35.78</h4>
+                </li>
+
+                <li data-category="" data-price="">
+                    <picture>
+                        <img src="images/wa2.png" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p class="icon">
+                            <span><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-share-square"></i></span>
+                            <span><i class="fas fa-shopping-basket"></i></span>
+                        </p>
+                        <strong>Watch</strong>
+                        <span>Modern silver mesh band with water resistance.</span>
+                        <small>Buy now</small>
+                    </div>
+                    <h4>$40.78</h4>
+                </li>
+
+                <li data-category="" data-price="">
+                    <picture>
+                        <img src="images/bz2.png" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p class="icon">
+                            <span><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-share-square"></i></span>
+                            <span><i class="fas fa-shopping-basket"></i></span>
+                        </p>
+                        <strong>Blazer</strong>
+                        <span>Professional charcoal grey tailored jacket.</span>
+                        <small>Buy now</small>
+                    </div>
+                    <h4>$42.78</h4>
+                </li>
+
+                <li data-category="" data-price="">
+                    <picture>
+                        <img src="images/wa3.png" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p class="icon">
+                            <span><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-share-square"></i></span>
+                            <span><i class="fas fa-shopping-basket"></i></span>
+                        </p>
+                        <strong>Watch</strong>
+                        <span>Luxury gold-tone finish with precision movement.</span>
+                        <small>Buy now</small>
+                    </div>
+                    <h4>$46.78</h4>
+                </li>
+
+                <li data-category="" data-price="">
+                    <picture>
+                        <img src="images/bz4.png" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p class="icon">
+                            <span><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-share-square"></i></span>
+                            <span><i class="fas fa-shopping-basket"></i></span>
+                        </p>
+                        <strong>Blazer</strong>
+                        <span>Premium black velvet texture for evening wear.</span>
+                        <small>Buy now</small>
+                    </div>
+                    <h4>$55.78</h4>
+                </li>
+
+                <li data-category="" data-price="">
+                    <picture>
+                        <img src="images/so.png" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p class="icon">
+                            <span><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-share-square"></i></span>
+                            <span><i class="fas fa-shopping-basket"></i></span>
+                        </p>
+                        <strong>Shoes</strong>
+                        <span>Lightweight urban sneakers for daily comfort.</span>
+                        <small>Buy now</small>
+                    </div>
+                    <h4>$25.78</h4>
+                </li>
+
+                <li data-category="" data-price="">
+                    <picture>
+                        <img src="images/samsung.png" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p class="icon">
+                            <span><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-share-square"></i></span>
+                            <span><i class="fas fa-shopping-basket"></i></span>
+                        </p>
+                        <strong>Mobile</strong>
+                        <span>Latest flagship smartphone with high-res display.</span>
+                        <small>Buy now</small>
+                    </div>
+                    <h4>$20.78</h4>
+                </li>
+
+                <li data-category="" data-price="">
+                    <picture>
+                        <img src="images/so1.png" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p class="icon">
+                            <span><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-share-square"></i></span>
+                            <span><i class="fas fa-shopping-basket"></i></span>
+                        </p>
+                        <strong>Shoes</strong>
+                        <span>High-performance running shoes with arch support.</span>
+                        <small>Buy now</small>
+                    </div>
+                    <h4>$15.78</h4>
+                </li>
+
+                <li data-category="" data-price="">
+                    <picture>
+                        <img src="images/so2.png" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p class="icon">
+                            <span><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-share-square"></i></span>
+                            <span><i class="fas fa-shopping-basket"></i></span>
+                        </p>
+                        <strong>Shoes</strong>
+                        <span>Casual suede loafers with breathable lining.</span>
+                        <small>Buy now</small>
+                    </div>
+                    <h4>$22.78</h4>
+                </li>
+
+                <li data-category="" data-price="">
+                    <picture>
+                        <img src="images/one.png" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p class="icon">
+                            <span><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-share-square"></i></span>
+                            <span><i class="fas fa-shopping-basket"></i></span>
+                        </p>
+                        <strong>Mobile</strong>
+                        <span>Sleek unlocked mobile with dual-SIM capability.</span>
+                        <small>Buy now</small>
+                    </div>
+                    <h4>$33.78</h4>
+                </li>
+
+                <li data-category="" data-price="">
+                    <picture>
+                        <img src="images/so3.png" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p class="icon">
+                            <span><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-share-square"></i></span>
+                            <span><i class="fas fa-shopping-basket"></i></span>
+                        </p>
+                        <strong>Shoes</strong>
+                        <span>Durable waterproof boots for outdoor hiking.</span>
+                        <small>Buy now</small>
+                    </div>
+                    <h4>$44.78</h4>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
