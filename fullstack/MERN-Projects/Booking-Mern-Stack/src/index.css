@@ -1,20 +1,20 @@
-*{
+* {
     padding: 0;
     margin: 0;
     /* border: 0.1px solid red; */
-     
+
 }
 
 /* Navbar */
 
-.navbar{
+.navbar {
     height: 50px;
     background-color: #003580;
     display: flex;
     justify-content: center;
 }
 
-.navContainer{
+.navContainer {
     width: 100%;
     max-width: 1024px;
     color: white;
@@ -23,11 +23,11 @@
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     font-weight: 500;
 }
 
-.navButton{
+.navButton {
     margin-left: 20px;
     border: none;
     padding: 5px 10px;
@@ -39,52 +39,58 @@
 
 /* Header */
 
-.header{
+.header {
     background-color: #003580;
     color: white;
     display: flex;
     justify-content: center;
     position: relative;
+    z-index: 10;
 }
 
-.headerContainer{
+.headerContainer {
     width: 100%;
     max-width: 1024px;
     margin: 20px 0px 100px 0px;
 }
 
-.headerList{
+.headerContainer.listMode {
+    margin: 20px 0px 20px 0px;
+    
+}
+
+.headerList {
     display: flex;
     gap: 40px;
 }
 
-.headerListItem{
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.headerListItem.active{
+.headerListItem.active {
     border: 1px solid white;
     padding: 10px;
     border-radius: 20px;
 }
 
-.headerDesc{
-  margin: 20px 0px;
+.headerDesc {
+    margin: 20px 0px;
 }
 
-.headerBtn{
-  background-color: #0071c2;
-  color: white;
-  font-weight: 500;
-  border: none;
-  padding: 10px;
-  border-radius: 20px;
-  cursor: pointer;
+.headerBtn {
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
-.headerSearch{
+.headerSearch {
     height: 30px;
     background-color: white;
     border: 3px solid #febb02;
@@ -99,29 +105,290 @@
     max-width: 1024px;
 }
 
-.headerSearchItem{
+.headerSearchItem {
     display: flex;
     align-items: center;
     gap: 10px;
     position: relative;
 }
 
-.headerIcon{
+.headerIcon {
     color: lightgray;
 
 }
 
-.headerSearchText{
-    color:lightgray;
+.headerSearchText {
+    color: lightgray;
 }
 
-.headerSeachInput{
+.headerSeachInput {
     border: none;
     outline: none;
 }
 
-.date{
+.date {
     position: absolute;
     top: 33px;
-     left:-95px;
+    left: -80px;
+}
+
+.headerSearchItem {
+    position: relative;
+}
+
+.options {
+    position: absolute;
+    top: 41px;
+    left: 10px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.optionCounterButton {
+    width: 30px;
+    aspect-ratio: 1;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: white;
+}
+
+.optionCounterButton:disabled {
+    cursor: not-allowed;
+}
+
+/* HomeContainer */
+
+.homeContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.featured {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1;
+}
+
+.featuredItem {
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.featuredImg {
+    width: 230.36px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.featuredTitles {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
+
+.featuredTitles h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.featuredTitles h2 {
+    font-size: 16px;
+
+}
+
+.homeTitle {
+    width: 1024px;
+    font-size: 20px;
+}
+
+/* property list */
+.pList {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pListItem {
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pListImg {
+    width: 100%;
+    height: 150px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.pListTitles>h1 {
+    font-size: 18px;
+}
+
+.pListTitles>h2 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* featured properties */
+
+.fp {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.fpItem {
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;  
+}
+
+.fpImg {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.fpName{
+    font-weight: bold;
+}
+
+.fpCity{
+    font-weight: 300;
+}
+
+.fpPrice{
+    font-weight: 550;
+}
+
+.fpRating {
+    display: flex;
+    align-items: center;
+}
+
+.fpRating > button{
+  background-color: #003580;
+  color: white;
+  border: none;
+  padding: 3px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.fpRating >  span{
+    font-size: 14px;
+}
+
+/* mail list */
+
+.mail{
+  width: 100%;
+  margin-top: 50px;
+  background-color: #003580;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.mailInputContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mailInputContainer > input{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.mailInputContainer > button{
+    height: 50px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* footer */
+.footer{
+    width: 100%;
+    width: 1024px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.fLists{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.fList{
+    list-style: none;
+    padding: 0;  
+}
+
+.fListItem{
+    margin-bottom: 10px;
+    color: #003580;
+    cursor: pointer;
+}
+
+.fText{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* list */
+.listContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
