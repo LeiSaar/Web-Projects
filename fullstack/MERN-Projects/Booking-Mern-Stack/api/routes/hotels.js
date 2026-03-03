@@ -1,5 +1,5 @@
 import express from "express"
-import { createHotel, updateHotel, deleteHotel, getHotel, getHotels } from "../controllers/hotelController.js";
+import { createHotel, updateHotel, deleteHotel, getHotel, getHotels, countByCity, countByType } from "../controllers/hotelController.js";
 import { verifyAdmin } from "../utils/verifyToken.js";
 const router = express.Router()
 
@@ -15,6 +15,11 @@ router.put("/:id", verifyAdmin, updateHotel);
 //delete
 router.delete("/:id", verifyAdmin, deleteHotel);
 
+// special routes FIRST
+router.get("/countByCity", countByCity);
+router.get("/countByType", countByType);
+
+// then generic routes
 //get
 router.get("/:id", getHotel);
 
