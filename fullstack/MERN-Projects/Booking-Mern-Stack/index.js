@@ -48,6 +48,10 @@ app.use("/api/hotels", hotelsRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/rooms", roomsRoute);
 
+app.get("/api/auth/test", (req, res) => {
+    res.send("Proxy workding!");
+});
+
 app.use((err, req, res, next) =>{
 
     console.error("Global Error Handler:", err.message);
