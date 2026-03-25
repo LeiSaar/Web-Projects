@@ -1,17 +1,24 @@
 import { Link } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext.jsx";
+import { useContext } from "react";
+
+
 const Navbar = () => {
+  const { user } = useContext(AuthContext);
+
   return (
     <div className='navbar'>
-        <div className="navContainer">
-          <Link to = "/" style={{color:"inherit", textDecoration: "none"}}>
+      <div className="navContainer">
+        <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
           <span className="logo">HotelBooking</span>
-          </Link>
-            
-            <div className="navItems">
-                <button className="navButton">Register</button>
-                <button className="navButton">Login</button>
-            </div>
-        </div>
+        </Link>
+        {user? user.name : (
+          <div className="navItems">
+            <button className="navButton">Register</button>
+            <button className="navButton">Login</button>
+          </div>
+        )}
+      </div>
     </div>
   )
 }

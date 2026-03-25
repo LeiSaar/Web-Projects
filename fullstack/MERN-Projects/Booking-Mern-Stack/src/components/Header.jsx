@@ -7,7 +7,8 @@ import { DateRange } from 'react-date-range';
 import { format } from "date-fns"
 import { useNavigate } from "react-router-dom";
 import { SearchContext } from '../context/SearchContext.jsx';
-
+import { AuthContext } from '../context/AuthContext.jsx';
+ 
 const Header = ({ type }) => {
     const [openDate, setOpenDate] = useState(false);
     const [destination, setDestination] = useState("");
@@ -48,6 +49,8 @@ const Header = ({ type }) => {
         navigate("/hotels", {state: {destination, dates, options}});
     }
 
+    const user = useContext(AuthContext);
+
     return (
         <div className='header'>
             <div className={type === "list" ? "headerContainer listMode" : "headerContainer"}>
@@ -80,7 +83,9 @@ const Header = ({ type }) => {
                         <p className="headerDesc">
                             Get rewardes for your travels - unlock instant savings of 10% or more with a free HotelBooking account.
                         </p>
-                        <button className="headerBtn">Sign in / Register</button>
+                        {
+                            !user && <button className="headerBtn">Sign in / Register</button>
+                        }
 
                         <div className="headerSearch">
                             <div className="headerSearchItem">
